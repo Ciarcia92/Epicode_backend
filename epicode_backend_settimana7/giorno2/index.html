@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>giorno2_settimana6</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        #btn {
+            border-radius: 10%;
+            color: black;
+            background-color: bisque;
+            cursor: pointer;
+        }
+        #div {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        li {
+            list-style-type: none;
+            padding-block: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>People</h1>
+    <div id="div">
+         <button id="btn">Show</button>
+    <div>
+       <ul id="list"></ul>
+    </div>
+
+    </div>
+   
+    <script>
+        const btn = document.getElementById('btn');
+        const list = document.getElementById('list');
+        btn.addEventListener("click", () => {
+            fetch('http://localhost:8082/os/get-people-json')
+            .then((response) => response.json())
+            .then((data) => { console.log(data);
+                list.innerHTML = '';
+                 data?.forEach((element) => {
+                list.innerHTML += `<li>Name:${element.fullname}, gender: ${element.gender}</li>`
+            })
+            })
+    })
+    </script>
+</body>
+</html>

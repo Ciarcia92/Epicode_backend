@@ -1,0 +1,4 @@
+Titolo: www periodicita: SETTIMANALEISBN: 222
+Titolo: www periodicita: MENSILEISBN: 123
+Titolo: fds periodicita: SETTIMANALE anno di pubblicazione: 0ISBN: 123
+Titolo: zzzz, periodicita: SEMESTRALE, anno di pubblicazione: 98, ISBN: 876

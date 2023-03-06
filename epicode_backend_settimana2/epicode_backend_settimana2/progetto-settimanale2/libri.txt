@@ -1,0 +1,5 @@
+Titolo: qqqqq autore: qqqqq, anno di pubblicazione: 111, genere: qqqqq
+Titolo: aaaa autore: aaaa, anno di pubblicazione: 333, genere: aaaa
+Titolo: <<<< autore: zzz, anno di pubblicazione: 111, genere: xxx
+Titolo: nnnn, autore: nnnnn, anno di pubblicazione: 0, genere: nnnnn
+Titolo: xxxxx, autore: xxxx, anno di pubblicazione: 123, genere: xxxx
